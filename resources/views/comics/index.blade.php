@@ -22,7 +22,7 @@
             <td>{{ $comic->type }}</td>
             <td>{{ $comic->price }}</td>
             <td>
-
+              <a class="btn btn-success" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Details</a>
             </td>
           </tr>  
         @endforeach
