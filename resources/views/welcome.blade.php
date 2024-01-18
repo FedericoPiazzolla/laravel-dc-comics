@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Welcome to Laravel</h1>
+    <div class="container">
+        <h1 class="text-center">Welcome to Comic admin panel</h1>
+    </div>
 @endsection
