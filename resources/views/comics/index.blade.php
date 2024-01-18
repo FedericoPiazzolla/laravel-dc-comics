@@ -3,6 +3,9 @@
 @section('content')
   <div class="container py-5">
     <h1>Lista dei fumetti</h1>
+    <div class="text-end py-5">
+      <a class="btn btn-warning" href="{{ route('comics.create') }}">Create New Comic</a>
+    </div>
 
     <table class="table table-dark table-stripped">
       <thead>
