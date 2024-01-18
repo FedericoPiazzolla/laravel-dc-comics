@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="container">
-      <h1>Crea un nuovo Comic</h1>
+      <h1 class="text-center p-5">Crea un nuovo Comic</h1>
 
       <div class="row justify-content-center mt-5">
-        <div class="col-6 mb-5">
-          <form action="{{ route('comics.store') }}" method="POST">
+        <div class="col-6 my-5">
+          <form class="mb-5" action="{{ route('comics.store') }}" method="POST">
             @csrf
                 
             <div class="mb-3">
