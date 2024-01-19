@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="container">
-    <h1 class="text-center p-5">Crea un nuovo Comic</h1>
+    <h1 class="text-center p-5">Modifica il Comic selezionato: {{ $comic->title }}</h1>
 
     <div class="row justify-content-center mt-5">
       <div class="col-6 my-5">
@@ -11,7 +11,7 @@
               
           <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" name="title">
+            <input type="text" class="form-control" id="title" name="title" value="">
           </div>
 
           <div class="mb-3">
