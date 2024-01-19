@@ -31,7 +31,7 @@
             <td>{{ $comic->title }}</td>
             <td>{{ $comic->type }}</td>
             <td>{{ $comic->price }}</td>
-            <td>
+            <td class="text-center">
               <a class="btn btn-success" href="{{ route('comics.show', ['comic' => $comic->id]) }}">
                 <i class="fa-solid fa-eye"></i>
               </a>
