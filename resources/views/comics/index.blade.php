@@ -31,15 +31,21 @@
             <td>{{ $comic->title }}</td>
             <td>{{ $comic->type }}</td>
             <td>{{ $comic->price }}</td>
-            <td class="d-flex justify-content-evenly px-3">
-              <a class="btn btn-success" href="{{ route('comics.show', ['comic' => $comic->id]) }}">Details</a>
-              <a class="btn btn-warning" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modify</a>
+            <td>
+              <a class="btn btn-success" href="{{ route('comics.show', ['comic' => $comic->id]) }}">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <a class="btn btn-warning mx-3" href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
+                <i class="fa-solid fa-pencil"></i>
+              </a>
 
               <form id="deleteForm" action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" class="d-inline-block" method="POST">
                 @csrf
                 @method('DELETE')
 
-                <button id="deleteButton" class="btn btn-danger" type="submit">Delete</button>
+                <button id="deleteButton" class="btn btn-danger" type="submit">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
               </form>
             </td>
           </tr>  

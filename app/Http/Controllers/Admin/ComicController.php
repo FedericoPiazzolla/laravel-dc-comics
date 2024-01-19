@@ -100,6 +100,6 @@ class ComicController extends Controller
         $comic = Comic::findOrFail($id);
         $comic->delete();
 
-        return redirect()->route('comics.index')->with('message', 'Hai eliminato il comic!!');
+        return redirect()->route('comics.index')->with('message', 'Hai eliminato il comic: ' . $comic->title);
     }
 }
