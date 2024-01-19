@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('price');
             $table->string('series');
             $table->string('type');
-            $table->string('sale_date');
+            $table->date('sale_date');
             $table->timestamps();
         });
     }
