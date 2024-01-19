@@ -3,6 +3,13 @@
 @section('content')
   <div class="container py-5">
     <h1>Lista dei fumetti</h1>
+
+    @if (Session::has('message'))
+      <div class="alert alert-warning my-5">
+        {{ Session::get('message') }}
+      </div>
+    @endif
+
     <div class="text-end py-5">
       <a class="btn btn-warning" href="{{ route('comics.create') }}">Create New Comic</a>
     </div>
