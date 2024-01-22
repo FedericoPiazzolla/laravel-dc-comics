@@ -6,6 +6,7 @@
 
     <div class="row justify-content-center mt-5">
       <div class="col-6 my-5">
+
         <form class="mb-5" action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="POST">
           @csrf
           @method('PUT')
