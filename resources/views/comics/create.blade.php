@@ -8,7 +8,7 @@
         <div class="col-6 my-5">
 
           @if ($errors->any())
-              <div class="alert alerrt-danger">
+              <div class="alert alert-danger">
 
                 <ul>
                   @foreach ($errors->all() as $error)
